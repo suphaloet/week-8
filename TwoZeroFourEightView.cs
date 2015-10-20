@@ -69,7 +69,7 @@ namespace twozerofoureight
                 }
             }
             
-            lb_Score.Text = Convert.ToString(sum);
+            lblScore.Text = Convert.ToString(sum);
         }
         private void UpdateBoard(int[,] board)
         {

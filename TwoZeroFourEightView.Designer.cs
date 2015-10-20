@@ -49,7 +49,7 @@
             this.btnRight = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
             this.lb_ScoreText = new System.Windows.Forms.Label();
-            this.lb_Score = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl00
@@ -277,22 +277,22 @@
             this.lb_ScoreText.TabIndex = 20;
             this.lb_ScoreText.Text = "Score : ";
             // 
-            // lb_Score
+            // lblScore
             // 
-            this.lb_Score.AutoSize = true;
-            this.lb_Score.Location = new System.Drawing.Point(235, 273);
-            this.lb_Score.Name = "lb_Score";
-            this.lb_Score.Size = new System.Drawing.Size(13, 13);
-            this.lb_Score.TabIndex = 21;
-            this.lb_Score.Text = "0";
-            this.lb_Score.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(235, 273);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(13, 13);
+            this.lblScore.TabIndex = 21;
+            this.lblScore.Text = "0";
+            this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TwoZeroFourEightView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 428);
-            this.Controls.Add(this.lb_Score);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lb_ScoreText);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnRight);
@@ -344,7 +344,7 @@
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Label lb_ScoreText;
-        private System.Windows.Forms.Label lb_Score;
+        private System.Windows.Forms.Label lblScore;
     }
 }
 
