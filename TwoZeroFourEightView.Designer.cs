@@ -48,6 +48,8 @@
             this.btnUp = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
+            this.lb_ScoreText = new System.Windows.Forms.Label();
+            this.lb_Score = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl00
@@ -266,11 +268,32 @@
             this.btnDown.UseVisualStyleBackColor = true;
             this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
-            // Form1
+            // lb_ScoreText
+            // 
+            this.lb_ScoreText.AutoSize = true;
+            this.lb_ScoreText.Location = new System.Drawing.Point(155, 273);
+            this.lb_ScoreText.Name = "lb_ScoreText";
+            this.lb_ScoreText.Size = new System.Drawing.Size(44, 13);
+            this.lb_ScoreText.TabIndex = 20;
+            this.lb_ScoreText.Text = "Score : ";
+            // 
+            // lb_Score
+            // 
+            this.lb_Score.AutoSize = true;
+            this.lb_Score.Location = new System.Drawing.Point(235, 273);
+            this.lb_Score.Name = "lb_Score";
+            this.lb_Score.Size = new System.Drawing.Size(13, 13);
+            this.lb_Score.TabIndex = 21;
+            this.lb_Score.Text = "0";
+            this.lb_Score.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TwoZeroFourEightView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 428);
+            this.Controls.Add(this.lb_Score);
+            this.Controls.Add(this.lb_ScoreText);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnUp);
@@ -291,9 +314,10 @@
             this.Controls.Add(this.lbl02);
             this.Controls.Add(this.lbl01);
             this.Controls.Add(this.lbl00);
-            this.Name = "Form1";
+            this.Name = "TwoZeroFourEightView";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -319,6 +343,8 @@
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.Button btnDown;
+        private System.Windows.Forms.Label lb_ScoreText;
+        private System.Windows.Forms.Label lb_Score;
     }
 }
 
