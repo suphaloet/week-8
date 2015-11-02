@@ -11,6 +11,7 @@ namespace twozerofoureight
         protected int boardSize; // default is 4
         protected int[,] board;
         protected Random rand;
+        private TwoZeroFourEightScoreView ScoreForm = new TwoZeroFourEightScoreView();
 
         public TwoZeroFourEightModel() : this(4)
         {
@@ -35,6 +36,20 @@ namespace twozerofoureight
             rand = new Random();
             board = Random(board);
             NotifyAll();
+        }
+        public int UpdateScore()
+        {
+            int sum = 0;
+            for (int i = 0; i < boardSize; i++)
+            {
+                for (int j = 0; j < boardSize; j++)
+                {
+                    sum += board[i, j];
+                }
+            }
+            ScoreForm.Score(sum);
+            ScoreForm.Show();
+            return sum;
         }
 
         private int[,] Random(int[,] input)
@@ -102,9 +117,10 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            UpdateScore();
             NotifyAll();
         }
-
+        //test
         public void PerformUp()
         {
             int[] buffer;
@@ -154,6 +170,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            UpdateScore();
             NotifyAll();
         }
 
@@ -208,6 +225,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            UpdateScore();
             NotifyAll();
         }
 
@@ -258,6 +276,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            UpdateScore();
             NotifyAll();
         }
     }
