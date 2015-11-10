@@ -14,7 +14,7 @@ namespace twozerofoureight
     {
         Model model;
         Controller controller;
-        TwoZeroFourEightScoreView F = new TwoZeroFourEightScoreView();
+        TwoZeroFourEightScoreView View2 = new TwoZeroFourEightScoreView();
        
         public TwoZeroFourEightView()
         {
@@ -23,7 +23,10 @@ namespace twozerofoureight
             model.AttachObserver(this);
             controller = new TwoZeroFourEightController();
             controller.AddModel(model);
+            model.AttachObserver(View2);
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
+            View2.Show();
+            
         }
 
         public void Notify(Model m)

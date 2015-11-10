@@ -47,8 +47,6 @@ namespace twozerofoureight
                     sum += board[i, j];
                 }
             }
-            ScoreForm.Score(sum);
-            ScoreForm.Show();
             return sum;
         }
 

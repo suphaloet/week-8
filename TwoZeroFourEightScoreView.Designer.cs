@@ -61,7 +61,6 @@
             this.Controls.Add(this.label1);
             this.Name = "TwoZeroFourEightScoreView";
             this.Text = "TwoZeroFourEightScoreView";
-            this.Load += new System.EventHandler(this.TwoZeroFourEightScoreView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
