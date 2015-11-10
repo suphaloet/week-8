@@ -15,10 +15,9 @@ namespace twozerofoureight
        
         public TwoZeroFourEightScoreView()
         {
-            InitializeComponent();
-            
+            InitializeComponent();    
         }
-        
+        //Finish !!!
         public void Notify(Model m)
         {
             lblScore.Text = Convert.ToString(((TwoZeroFourEightModel)m).UpdateScore());
